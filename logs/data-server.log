@@ -1,0 +1,250 @@
+2023-12-04 17:44:06,906$$[INFO ]$$[main]$$[]$$[org.springframework.boot.StartupInfoLogger.logStarting(50)]$$Starting SpringbootTokenApplication on 马超波 with PID 13276 (D:\code\springboot-token\target\classes started by machaobo in D:\code\springboot-token)
+2023-12-04 17:44:06,911$$[DEBUG]$$[main]$$[]$$[org.springframework.boot.StartupInfoLogger.logStarting(53)]$$Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-12-04 17:44:06,912$$[INFO ]$$[main]$$[]$$[org.springframework.boot.SpringApplication.logStartupProfileInfo(675)]$$No active profile set, falling back to default profiles: default
+2023-12-04 17:44:08,815$$[WARN ]$$[main]$$[]$$[org.mybatis.logging.Logger.warn(44)]$$No MyBatis mapper was found in '[com.geesun]' package. Please check your configuration.
+2023-12-04 17:44:10,067$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Initializing ProtocolHandler ["http-nio-809"]
+2023-12-04 17:44:10,076$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Starting service [Tomcat]
+2023-12-04 17:44:10,076$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-04 17:44:10,086$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\install\java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;d:\install\Microsoft VS Code\bin;D:\install\java\jdk1.8.0_201\bin;D:\install\apache-maven-3.8.1\bin;D:\install\TortoiseGit\bin;d:\install\Git\cmd;C:\Program Files\dotnet\;D:\install\nodejs\;C:\Users\machaobo\AppData\Local\Microsoft\WindowsApps;d:\install\JetBrains\IntelliJ IDEA 2021.2.1\bin;;d:\install\IntelliJ IDEA Community Edition 2023.2.3\bin;;C:\Users\machaobo\AppData\Local\GitHubDesktop\bin;C:\Users\machaobo\AppData\Roaming\npm;.]
+2023-12-04 17:44:10,282$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Initializing Spring embedded WebApplicationContext
+2023-12-04 17:44:10,621$$[INFO ]$$[main]$$[]$$[com.zaxxer.hikari.HikariDataSource.<init>(80)]$$master - Starting...
+2023-12-04 17:44:11,702$$[INFO ]$$[main]$$[]$$[com.zaxxer.hikari.HikariDataSource.<init>(82)]$$master - Start completed.
+2023-12-04 17:44:11,704$$[INFO ]$$[main]$$[]$$[com.baomidou.dynamic.datasource.DynamicRoutingDataSource.addDataSource(148)]$$dynamic-datasource - add a datasource named [master] success
+2023-12-04 17:44:11,704$$[INFO ]$$[main]$$[]$$[com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(228)]$$dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2023-12-04 17:44:12,383$$[WARN ]$$[main]$$[]$$[org.springframework.context.support.AbstractApplicationContext.refresh(554)]$$Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.geesun.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-12-04 17:44:12,403$$[INFO ]$$[main]$$[]$$[com.baomidou.dynamic.datasource.DynamicRoutingDataSource.destroy(205)]$$dynamic-datasource start closing ....
+2023-12-04 17:44:12,404$$[INFO ]$$[main]$$[]$$[com.zaxxer.hikari.HikariDataSource.close(350)]$$master - Shutdown initiated...
+2023-12-04 17:44:12,450$$[INFO ]$$[main]$$[]$$[com.zaxxer.hikari.HikariDataSource.close(352)]$$master - Shutdown completed.
+2023-12-04 17:44:12,451$$[INFO ]$$[main]$$[]$$[com.baomidou.dynamic.datasource.DynamicRoutingDataSource.destroy(209)]$$dynamic-datasource all closed success,bye
+2023-12-04 17:44:12,454$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Stopping service [Tomcat]
+2023-12-04 17:44:12,642$$[ERROR]$$[main]$$[]$$[org.springframework.boot.SpringApplication.reportFailure(858)]$$Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.geesun.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.geesun.SpringbootTokenApplication.main(SpringbootTokenApplication.java:13)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.geesun.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1239)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.geesun.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1646)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 32 common frames omitted
+2023-12-04 17:51:57,633$$[INFO ]$$[main]$$[]$$[org.springframework.boot.StartupInfoLogger.logStarting(50)]$$Starting SpringbootTokenApplication on 马超波 with PID 25520 (D:\code\springboot-token\target\classes started by machaobo in D:\code\springboot-token)
+2023-12-04 17:51:57,638$$[DEBUG]$$[main]$$[]$$[org.springframework.boot.StartupInfoLogger.logStarting(53)]$$Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-12-04 17:51:57,639$$[INFO ]$$[main]$$[]$$[org.springframework.boot.SpringApplication.logStartupProfileInfo(675)]$$No active profile set, falling back to default profiles: default
+2023-12-04 17:52:00,650$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Initializing ProtocolHandler ["http-nio-809"]
+2023-12-04 17:52:00,657$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Starting service [Tomcat]
+2023-12-04 17:52:00,658$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-04 17:52:00,667$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\install\java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;d:\install\Microsoft VS Code\bin;D:\install\java\jdk1.8.0_201\bin;D:\install\apache-maven-3.8.1\bin;D:\install\TortoiseGit\bin;d:\install\Git\cmd;C:\Program Files\dotnet\;D:\install\nodejs\;C:\Users\machaobo\AppData\Local\Microsoft\WindowsApps;d:\install\JetBrains\IntelliJ IDEA 2021.2.1\bin;;d:\install\IntelliJ IDEA Community Edition 2023.2.3\bin;;C:\Users\machaobo\AppData\Local\GitHubDesktop\bin;C:\Users\machaobo\AppData\Roaming\npm;.]
+2023-12-04 17:52:00,875$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Initializing Spring embedded WebApplicationContext
+2023-12-04 17:52:01,276$$[INFO ]$$[main]$$[]$$[com.zaxxer.hikari.HikariDataSource.<init>(80)]$$master - Starting...
+2023-12-04 17:52:01,894$$[INFO ]$$[main]$$[]$$[com.zaxxer.hikari.HikariDataSource.<init>(82)]$$master - Start completed.
+2023-12-04 17:52:01,896$$[INFO ]$$[main]$$[]$$[com.baomidou.dynamic.datasource.DynamicRoutingDataSource.addDataSource(148)]$$dynamic-datasource - add a datasource named [master] success
+2023-12-04 17:52:01,897$$[INFO ]$$[main]$$[]$$[com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(228)]$$dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2023-12-04 17:52:05,304$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Starting ProtocolHandler ["http-nio-809"]
+2023-12-04 17:52:05,306$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Using a shared selector for servlet write/read
+2023-12-04 17:52:05,332$$[INFO ]$$[main]$$[]$$[org.springframework.boot.StartupInfoLogger.logStarted(59)]$$Started SpringbootTokenApplication in 9.005 seconds (JVM running for 11.859)
+2023-12-04 17:52:05,661$$[INFO ]$$[RMI TCP Connection(1)-172.22.224.1]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-04 17:52:06,149$$[INFO ]$$[RMI TCP Connection(2)-172.22.224.1]$$[]$$[io.netty.util.internal.logging.Slf4JLogger.info(101)]$$Starting without optional epoll library
+2023-12-04 17:52:06,151$$[INFO ]$$[RMI TCP Connection(2)-172.22.224.1]$$[]$$[io.netty.util.internal.logging.Slf4JLogger.info(101)]$$Starting without optional kqueue library
+2023-12-04 17:54:26,412$$[WARN ]$$[http-nio-809-exec-3]$$[]$$[org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.logException(194)]$$Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-12-04 17:54:32,387$$[DEBUG]$$[http-nio-809-exec-4]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$==>  Preparing: SELECT id,username,password FROM `user` WHERE (username = ?) 
+2023-12-04 17:54:32,400$$[DEBUG]$$[http-nio-809-exec-4]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$==> Parameters: a(String)
+2023-12-04 17:54:32,505$$[ERROR]$$[http-nio-809-exec-4]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(175)]$$Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: org.postgresql.util.PSQLException: ERROR: syntax error at or near "`"
+  位置：36
+### The error may exist in com/geesun/mapper/UserMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,username,password  FROM `user`     WHERE (username = ?)
+### Cause: org.postgresql.util.PSQLException: ERROR: syntax error at or near "`"
+  位置：36
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: ERROR: syntax error at or near "`"
+  位置：36] with root cause
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "`"
+  位置：36
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:473)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:393)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:164)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy123.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:163)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy96.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:108)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96)
+	at com.sun.proxy.$Proxy97.selectOne(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy99.selectOne(Unknown Source)
+	at com.geesun.service.impl.UserServiceImpl.findByUsername(UserServiceImpl.java:26)
+	at com.geesun.service.impl.UserServiceImpl$$FastClassBySpringCGLIB$$9dd36911.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at com.geesun.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$c9120b30.findByUsername(<generated>)
+	at com.geesun.controller.UserController.login(UserController.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:154)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:122)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2023-12-04 17:55:19,105$$[INFO ]$$[Thread-22]$$[]$$[com.baomidou.dynamic.datasource.DynamicRoutingDataSource.destroy(205)]$$dynamic-datasource start closing ....
+2023-12-04 17:55:19,106$$[INFO ]$$[Thread-22]$$[]$$[com.zaxxer.hikari.HikariDataSource.close(350)]$$master - Shutdown initiated...
+2023-12-04 17:55:19,127$$[INFO ]$$[Thread-22]$$[]$$[com.zaxxer.hikari.HikariDataSource.close(352)]$$master - Shutdown completed.
+2023-12-04 17:55:19,127$$[INFO ]$$[Thread-22]$$[]$$[com.baomidou.dynamic.datasource.DynamicRoutingDataSource.destroy(209)]$$dynamic-datasource all closed success,bye
+2023-12-04 17:55:50,171$$[INFO ]$$[main]$$[]$$[org.springframework.boot.StartupInfoLogger.logStarting(50)]$$Starting SpringbootTokenApplication on 马超波 with PID 15892 (D:\code\springboot-token\target\classes started by machaobo in D:\code\springboot-token)
+2023-12-04 17:55:50,176$$[DEBUG]$$[main]$$[]$$[org.springframework.boot.StartupInfoLogger.logStarting(53)]$$Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-12-04 17:55:50,177$$[INFO ]$$[main]$$[]$$[org.springframework.boot.SpringApplication.logStartupProfileInfo(675)]$$No active profile set, falling back to default profiles: default
+2023-12-04 17:55:53,017$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Initializing ProtocolHandler ["http-nio-809"]
+2023-12-04 17:55:53,024$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Starting service [Tomcat]
+2023-12-04 17:55:53,024$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-04 17:55:53,031$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\install\java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;d:\install\Microsoft VS Code\bin;D:\install\java\jdk1.8.0_201\bin;D:\install\apache-maven-3.8.1\bin;D:\install\TortoiseGit\bin;d:\install\Git\cmd;C:\Program Files\dotnet\;D:\install\nodejs\;C:\Users\machaobo\AppData\Local\Microsoft\WindowsApps;d:\install\JetBrains\IntelliJ IDEA 2021.2.1\bin;;d:\install\IntelliJ IDEA Community Edition 2023.2.3\bin;;C:\Users\machaobo\AppData\Local\GitHubDesktop\bin;C:\Users\machaobo\AppData\Roaming\npm;.]
+2023-12-04 17:55:53,218$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Initializing Spring embedded WebApplicationContext
+2023-12-04 17:55:53,575$$[INFO ]$$[main]$$[]$$[com.zaxxer.hikari.HikariDataSource.<init>(80)]$$master - Starting...
+2023-12-04 17:55:54,152$$[INFO ]$$[main]$$[]$$[com.zaxxer.hikari.HikariDataSource.<init>(82)]$$master - Start completed.
+2023-12-04 17:55:54,153$$[INFO ]$$[main]$$[]$$[com.baomidou.dynamic.datasource.DynamicRoutingDataSource.addDataSource(148)]$$dynamic-datasource - add a datasource named [master] success
+2023-12-04 17:55:54,154$$[INFO ]$$[main]$$[]$$[com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(228)]$$dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2023-12-04 17:55:57,631$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Starting ProtocolHandler ["http-nio-809"]
+2023-12-04 17:55:57,634$$[INFO ]$$[main]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Using a shared selector for servlet write/read
+2023-12-04 17:55:57,660$$[INFO ]$$[main]$$[]$$[org.springframework.boot.StartupInfoLogger.logStarted(59)]$$Started SpringbootTokenApplication in 8.787 seconds (JVM running for 10.586)
+2023-12-04 17:55:58,298$$[INFO ]$$[RMI TCP Connection(2)-172.22.224.1]$$[]$$[org.apache.juli.logging.DirectJDKLog.log(173)]$$Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-04 17:55:59,075$$[INFO ]$$[RMI TCP Connection(1)-172.22.224.1]$$[]$$[io.netty.util.internal.logging.Slf4JLogger.info(101)]$$Starting without optional epoll library
+2023-12-04 17:55:59,077$$[INFO ]$$[RMI TCP Connection(1)-172.22.224.1]$$[]$$[io.netty.util.internal.logging.Slf4JLogger.info(101)]$$Starting without optional kqueue library
+2023-12-04 17:56:02,677$$[DEBUG]$$[http-nio-809-exec-2]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$==>  Preparing: SELECT id,username,password FROM public.user WHERE (username = ?) 
+2023-12-04 17:56:02,690$$[DEBUG]$$[http-nio-809-exec-2]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$==> Parameters: a(String)
+2023-12-04 17:56:02,756$$[DEBUG]$$[http-nio-809-exec-2]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$<==      Total: 1
+2023-12-04 17:56:02,758$$[DEBUG]$$[http-nio-809-exec-2]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$==>  Preparing: SELECT id,username,password FROM public.user WHERE (username = ?) 
+2023-12-04 17:56:02,759$$[DEBUG]$$[http-nio-809-exec-2]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$==> Parameters: a(String)
+2023-12-04 17:56:02,761$$[DEBUG]$$[http-nio-809-exec-2]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$<==      Total: 1
+2023-12-04 17:56:02,762$$[DEBUG]$$[http-nio-809-exec-2]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$==>  Preparing: SELECT id,username,password FROM public.user WHERE (username = ?) 
+2023-12-04 17:56:02,763$$[DEBUG]$$[http-nio-809-exec-2]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$==> Parameters: a(String)
+2023-12-04 17:56:02,764$$[DEBUG]$$[http-nio-809-exec-2]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$<==      Total: 1
+2023-12-04 17:57:00,772$$[DEBUG]$$[http-nio-809-exec-3]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$==>  Preparing: SELECT id,username,password FROM public.user WHERE id=? 
+2023-12-04 17:57:00,773$$[DEBUG]$$[http-nio-809-exec-3]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$==> Parameters: 1(String)
+2023-12-04 17:57:00,785$$[DEBUG]$$[http-nio-809-exec-3]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$<==      Total: 1
+2023-12-04 17:57:00,796$$[DEBUG]$$[http-nio-809-exec-3]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$==>  Preparing: SELECT id,username,password FROM public.user 
+2023-12-04 17:57:00,797$$[DEBUG]$$[http-nio-809-exec-3]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$==> Parameters: 
+2023-12-04 17:57:00,802$$[DEBUG]$$[http-nio-809-exec-3]$$[]$$[org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(143)]$$<==      Total: 1

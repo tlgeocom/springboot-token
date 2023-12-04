@@ -1,0 +1,23 @@
+server:
+  port: 809
+
+spring:
+  application:
+    name: springboot-token
+  datasource:
+    dynamic:
+      primary: master
+      strict: false
+      datasource:
+        master:
+          url: jdbc:postgresql://localhost:5432/postgres?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false&allowMultiQueries=true
+          username: postgres
+          password: postgres
+          driver-class-name: org.postgresql.Driver
+
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  level:
+    com.geesun.*: debug
